@@ -21,7 +21,7 @@ $(function () {
   // from the div id, then parsing to an integer so they can be compared
   // to the query result
   var timeBlocks = document.getElementsByClassName('time-block');
-  var theHour = 14// dayjs().format('H');
+  var theHour = dayjs().format('H');
 
   $(timeBlocks).each(function(){
     var hourOfBlock = parseInt(this.id.replace(/\D/g, ''));
